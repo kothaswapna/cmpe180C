@@ -1,4 +1,3 @@
-import java.util.HashMap;
 import java.util.Random;
 
 public class Main {
@@ -11,8 +10,8 @@ public class Main {
         
         X.sort();
         Y.sort();
-        System.out.println("Execution Time for Multi Threading MergeSort:"+X.getExecutionTime());
-        System.out.println("Execution Time for Single Thread MergeSort:"+Y.getExecutionTime());
+        System.out.println("Execution Time for Multi Thread MergeSort for 10 element array:"+X.getExecutionTime());
+        System.out.println("Execution Time for Single Thread MergeSort for 10 element array:"+Y.getExecutionTime());
         
         x = randomArray(100);
         y = x.clone();
@@ -21,8 +20,8 @@ public class Main {
 
         X.sort();
         Y.sort();
-        System.out.println("Execution Time for Multi Threading MergeSort:"+X.getExecutionTime());
-        System.out.println("Execution Time for Single Thread MergeSort:"+Y.getExecutionTime());
+        System.out.println("Execution Time for Multi Thread MergeSort for 100 element array:"+X.getExecutionTime());
+        System.out.println("Execution Time for Single Thread MergeSort for 100 element array :"+Y.getExecutionTime());
 
         x = randomArray(1000);
         y = x.clone();
@@ -31,8 +30,8 @@ public class Main {
 
         X.sort();
         Y.sort();
-        System.out.println("Execution Time for Multi Threading MergeSort:"+X.getExecutionTime());
-        System.out.println("Execution Time for Single Thread MergeSort:"+Y.getExecutionTime());
+        System.out.println("Execution Time for Multi Thread MergeSort for 1000 element array:"+X.getExecutionTime());
+        System.out.println("Execution Time for Single Thread MergeSort for 1000 element array:"+Y.getExecutionTime());
 
         x = randomArray(10000);
         y = x.clone();
@@ -41,8 +40,8 @@ public class Main {
 
         X.sort();
         Y.sort();
-        System.out.println("Execution Time for Multi Threading MergeSort:"+X.getExecutionTime());
-        System.out.println("Execution Time for Single Thread MergeSort:"+Y.getExecutionTime());
+        System.out.println("Execution Time for Multi Thread MergeSort for 10000 element array:"+X.getExecutionTime());
+        System.out.println("Execution Time for Single Thread MergeSort for 10000 element array:"+Y.getExecutionTime());
 
         x = randomArray(100000);
         y = x.clone();
@@ -51,8 +50,8 @@ public class Main {
 
         X.sort();
         Y.sort();
-        System.out.println("Execution Time for Multi Threading MergeSort:"+X.getExecutionTime());
-        System.out.println("Execution Time for Single Thread MergeSort:"+Y.getExecutionTime());
+        System.out.println("Execution Time for Multi Thread MergeSort for 100000 element array :"+X.getExecutionTime());
+        System.out.println("Execution Time for Single Thread MergeSort for 100000 element array:"+Y.getExecutionTime());
     }
     
     public static Integer[] randomArray(int size){
@@ -65,4 +64,3 @@ public class Main {
         return temp;
     }
 }
-
